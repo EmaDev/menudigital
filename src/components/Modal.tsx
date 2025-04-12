@@ -54,7 +54,7 @@ const Modal = () => {
             name: formData.name,
             price: Number.parseFloat(formData.price),
             idCategory: formData.idCategory,
-            image: "",
+            //image: "",
         }
 
         if (selectedItem?.id) {
@@ -115,14 +115,6 @@ const Modal = () => {
                         onChange={handleChange}
                     ></textarea>
 
-                    {/*<input
-                            type="text"
-                            name="stock"
-                            placeholder="Stock"
-                            className="border rounded-md p-2 w-1/2"
-                            value={formData.stock}
-                            onChange={handleChange}
-                        />*/}
                     <label className="font-bold">Categoria</label>
                     <select
                         name="idCategory"

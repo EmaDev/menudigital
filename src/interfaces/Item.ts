@@ -4,8 +4,7 @@ export interface IItem {
     name: string;
     description: string;
     price: number;
-    image: string;
+    image?: string;
     idCategory: string;
     active:boolean;
-    stock?:number;
 } 

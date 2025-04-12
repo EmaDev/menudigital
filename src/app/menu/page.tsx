@@ -5,6 +5,7 @@ import { getAllItems } from "@/services/firebase/items";
 import { getAllCategories } from "@/services/firebase/categories";
 import logoImg from "../../assets/logo.png";
 
+export const dynamic = "force-dynamic";
 export default async function Menu() {
 
     const items = await getAllItems();
@@ -24,9 +25,9 @@ export default async function Menu() {
             <div className="max-w-2xl mx-auto p-6">
                 {categories.filter((category) => category.active).map(category => (
                     <section key={category.id} className="mb-12">
-                        <h2 className="text-2xl font-bold mb-2 flex items-center">
+                        <h2 className="text-2xl font-bold mb-3 flex items-center">
                             {category.name}
-                            <span className="flex-1 h-1 mt-3 bg-gradient-to-r from-red-400 to-red-500 ml-4 rounded-3xl"></span>
+                            <span className="flex-1 h-[2px] mt-3 bg-gradient-to-r from-red-400 to-red-500 ml-4 rounded-3xl"></span>
                         </h2>
                         <div>
                             {items

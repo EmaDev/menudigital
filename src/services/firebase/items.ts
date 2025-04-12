@@ -56,10 +56,9 @@ export const getAllItems = async (): Promise<IItem[]> => {
                 name: data.name,
                 description: data.description,
                 price: data.price,
-                image: data.image,
+                //image: data.image,
                 idCategory: data.idCategory,
                 active: data.active,
-                stock: data.stock,
             } as IItem;
         });
         return items;
